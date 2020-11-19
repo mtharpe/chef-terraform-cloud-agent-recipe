@@ -1,0 +1,9 @@
+[Unit]
+Description=HashiCorp Terraform Cloud Agent
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/tfc-agent -token <%= node['tfc_agent']['token'] %> 
+
+[Install]
+WantedBy=multi-user.target

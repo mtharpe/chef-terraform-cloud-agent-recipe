@@ -1,5 +1,5 @@
 #
-# Cookbook:: tfc-agent
+# Cookbook:: tfc_agent
 # Spec:: default
 #
 # Copyright:: 2020, Michael Tharpe
@@ -18,7 +18,7 @@
 
 require 'spec_helper'
 
-describe 'tfc-agent::default' do
+describe 'tfc_agent::default' do
   context 'When all attributes are default, on Ubuntu 20.04' do
     # for a complete list of available platforms and versions see:
     # https://github.com/chefspec/fauxhai/blob/master/PLATFORMS.md
