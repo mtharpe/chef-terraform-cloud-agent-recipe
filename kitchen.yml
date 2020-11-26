@@ -22,9 +22,12 @@ verifier:
   name: inspec
 
 platforms:
-  - name: generic/ubuntu1604
   - name: generic/ubuntu1804
   - name: generic/ubuntu2004
+  - name: generic/centos7
+  - name: generic/centos8
+  - name: generic/fedora32
+  - name: generic/fedora33
 
 suites:
   - name: default
@@ -33,4 +36,4 @@ suites:
         - test/integration/default
     attributes:
       tfc_agent:
-        token: 'ENTER YOUR TFC AGENT TOKEN HERE'
+        token: 'l3SiPldeJpitSg.atlasv1.hwu1NpiPz8vG0m1AcCvMcWQjs7tJiTJqQlelRYkPMBsvGsS50fbP4Y3XSOxGFeqrjBY'

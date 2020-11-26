@@ -16,7 +16,9 @@ Using test-kitchen there is an attribute area to enter your agent token, and you
 
 ## Platform:
 
-* ubuntu (< 16.0)
+* ubuntu (<= 16.0)
+* centos (<= 7.0)
+* fedora (<= 32.0) 
 
 ## Cookbooks:
 

@@ -9,4 +9,7 @@ chef_version '>= 15.0'
 issues_url 'https://github.com/mtharpe/chef-terraform-cloud-agent-recipe/issues'
 source_url 'https://github.com/mtharpe/chef-terraform-cloud-agent-recipe'
 
-supports 'ubuntu', '< 16.0'
+supports 'ubuntu', '<= 18.0'
+supports 'centos', '<= 7.0'
+supports 'redhat', '<= 7.0'
+supports 'fedora', '<= 32.0'
