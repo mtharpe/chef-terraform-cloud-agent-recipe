@@ -1,0 +1,39 @@
+---
+driver:
+  name: vagrant
+  customize:
+    memory: 2046
+  gui: false
+
+driver_config:
+  network:
+  - ["forwarded_port", {guest: 443, host: 8443}]
+
+provisioner:
+  sudo: true
+  name: chef_zero
+  product_name: chef
+  chef_license: accept
+  install_strategy: always
+  always_update_cookbooks: true
+
+
+verifier:
+  name: inspec
+
+platforms:
+  - name: generic/ubuntu1804
+  - name: generic/ubuntu2004
+  - name: generic/centos7
+  - name: generic/centos8
+  - name: generic/fedora32
+  - name: generic/fedora33
+
+suites:
+  - name: default
+    verifier:
+      inspec_tests:
+        - test/integration/default
+    attributes:
+      tfc_agent:
+        token: '<Enter your TFE Agent Token here'
