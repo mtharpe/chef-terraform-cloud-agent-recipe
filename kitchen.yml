@@ -36,4 +36,4 @@ suites:
         - test/integration/default
     attributes:
       tfc_agent:
-        token: 'l3SiPldeJpitSg.atlasv1.hwu1NpiPz8vG0m1AcCvMcWQjs7tJiTJqQlelRYkPMBsvGsS50fbP4Y3XSOxGFeqrjBY'
+        token: '<Enter your TFE Agent Token here'
